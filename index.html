@@ -37,7 +37,7 @@
 	<!-- OVERLAY MENU -->
 	<div id="overlay-menu" class="overlay-menu">
 
-		<a href="#" id="overlay-menu-hide" class="navigation-hide"><i class="ion-close-round"></i></a>
+		<a href="#" id="overlay-menu-hide" class="navigation-hide"><button title="Close (Esc)" type="button" class="mfp-close">×</button></a>
 
 		<div class="overlay-menu-inner">
 			<nav class="overlay-menu-nav">
@@ -45,22 +45,22 @@
 				<ul id="nav">
 
 					<li class="slidedown">
-						<a href="#home">Home</a>
+						<a class="link" href="#home">Home</a>
 					</li>
 
-					<li><a href="#about">About</a></li>
+					<li><a class="link" href="#about">About</a></li>
 
 					<li class="slidedown">
 						<a href="#portfolio">Portfolio</a>
 						<ul>
-							<li><a href="#portfolio">2018 - 「Hier Kommt Die Sonne」</a></li>
-							<li><a href="#portfolio">2018 - Wicked mind.</a></li>
-							<li><a href="#portfolio">2018 - DEAR BOY</a></li>
+							<li><a class="link" href="#portfolio">2018 - 「Hier Kommt Die Sonne」</a></li>
+							<li><a class="link" href="#portfolio">2018 - Wicked mind.</a></li>
+							<li><a class="link" href="#portfolio">2018 - DEAR BOY</a></li>
 						</ul>
 					</li>
 
 
-					<li><a href="https://www.instagram.com/arakawayui__/">Contact</a></li>
+					<li><a class="link" href="https://www.instagram.com/arakawayui__/">Contact</a></li>
 
 				</ul>
 
@@ -136,6 +136,7 @@
 					<h1 class="mh-line-size-1 font-alt m-b-50" style=""><span style="font-size: 40px; text-shadow: 1px 1px 1px white; font-family: 'Open Sans Condensed', sans-serif;">Arakawa Yui</span></h1>
 
 				</div>
+
 			</div>
 			<!-- /HERO TEXT -->
 
@@ -160,7 +161,7 @@
 				<!-- WORKS GRID -->
 				<div class="row">
 
-					<div id="works-grid" class="works-grid works-hover-w" style="position: relative; height: 1216px;">
+					<div id="works-grid" class="content works-grid works-hover-w" style="position: relative; height: 1216px;">
 
 						<!-- DO NOT DELETE THIS DIV -->
 						<div class="grid-sizer"></div>
@@ -168,7 +169,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item tall branding" style="height: 608px; position: absolute; left: 0px; top: 0px;">
 							<a class="test-popup-link" href="./portfolio/1.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/1.jpg" alt="">
+								<img class="appear" data-src="./portfolio/1.jpg" src="./portfolio/1.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -179,7 +180,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item design" style="height: 304px; position: absolute; left: 320px; top: 0px;">
 							<a class="test-popup-link" href="./portfolio/2.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/2.jpg" alt="">
+								<img class="appear" data-src="./portfolio/2.jpg" src="./portfolio/2.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -190,7 +191,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item design" style="height: 304px; position: absolute; left: 640px; top: 0px;">
 							<a class="test-popup-link" href="./portfolio/3.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/3.jpg" alt="">
+								<img class="appear" data-src="./portfolio/3.jpg" src="./portfolio/3.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -201,7 +202,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item design" style="height: 304px; position: absolute; left: 960px; top: 0px;">
 							<a class="test-popup-link" href="./portfolio/4.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/4.jpg" alt="">
+								<img class="appear" data-src="./portfolio/4.jpg" src="./portfolio/4.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -212,7 +213,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item design" style="height: 304px; position: absolute; left: 320px; top: 304px;">
 							<a class="test-popup-link" href="./portfolio/5.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/5.jpg" alt="">
+								<img class="appear" data-src="./portfolio/5.jpg" src="./portfolio/5.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -223,7 +224,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide-tall branding photo web" style="height: 608px; position: absolute; left: 640px; top: 304px;">
 							<a class="test-popup-link" href="./portfolio/6.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/6.jpg" alt="">
+								<img class="appear" data-src="./portfolio/6.jpg" src="./portfolio/6.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -232,9 +233,9 @@
 						<!-- /PORTFOLIO ITEM -->
 
 						<!-- PORTFOLIO ITEM -->
-						<div class="work-item wide design photo web" style="height: 304px; position: absolute; left: 0px; top: 608px;">
+						<div class="work-item wide-tall branding photo web" style="height: 608px; position: absolute; left: 640px; top: 304px;">
 							<a class="test-popup-link" href="./portfolio/7.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/7.jpg" alt="">
+								<img class="appear" data-src="./portfolio/7.jpg" src="./portfolio/7.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -245,7 +246,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item branding photo" style="height: 304px; position: absolute; left: 0px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/8.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/8.jpg" alt="">
+								<img class="appear" data-src="./portfolio/8.jpg" src="./portfolio/8.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -256,7 +257,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item branding photo" style="height: 304px; position: absolute; left: 320px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/9.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/9.jpg" alt="">
+								<img class="appear" data-src="./portfolio/9.jpg" src="./portfolio/9.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -267,7 +268,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide design web" style="height: 304px; position: absolute; left: 640px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/10.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/10.jpg" alt="">
+								<img class="appear" data-src="./portfolio/10.jpg" src="./portfolio/10.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -278,7 +279,7 @@
 						<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide design web" style="height: 304px; position: absolute; left: 640px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/11.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/11.jpg" alt="">
+								<img class="appear" data-src="./portfolio/11.jpg" src="./portfolio/11.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -289,7 +290,7 @@
 												<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide design web" style="height: 304px; position: absolute; left: 640px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/12.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/12.jpg" alt="">
+								<img class="appear" data-src="./portfolio/12.jpg" src="./portfolio/12.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -300,7 +301,7 @@
 												<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide design web" style="height: 304px; position: absolute; left: 640px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/13.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/13.jpg" alt="">
+								<img class="appear" data-src="./portfolio/13.jpg" src="./portfolio/13.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -311,7 +312,7 @@
 												<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide design web" style="height: 304px; position: absolute; left: 640px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/14.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/14.jpg" alt="">
+								<img class="appear" data-src="./portfolio/14.jpg" src="./portfolio/14.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -322,7 +323,7 @@
 												<!-- PORTFOLIO ITEM -->
 						<div class="work-item wide design web" style="height: 304px; position: absolute; left: 640px; top: 912px;">
 							<a class="test-popup-link" href="./portfolio/15.jpg" title="2018 - 「Hier Kommt Die Sonne」">
-								<img src="./portfolio/15.jpg" alt="">
+								<img class="appear" data-src="./portfolio/15.jpg" src="./portfolio/15.jpg" alt="">
 								<div class="work-caption font-alt">
 									<h3 class="work-title">2018 - 「Hier Kommt Die Sonne」</h3>
 								</div>
@@ -425,14 +426,9 @@ opacity: 0.85;"></div>
 	<script src="./resources/imagesloaded.pkgd.js"></script>
 	<script src="./resources/isotope.pkgd.min.js"></script>
 	<script src="./resources/packery-mode.pkgd.min.js"></script>
-	<script src="./resources/appear.js"></script>
 	<script src="./resources/jquery.easing.1.3.js"></script>
 	<script src="./resources/wow.min.js"></script>
-	<script src="./resources/jqBootstrapValidation.js"></script>
 	<script src="./resources/jquery.parallax-1.1.3.js"></script>
 	<script src="./resources/smoothscroll.js"></script>
-	<script src="./resources/js"></script>
 	<script src="./resources/custom.js"></script>
-
-
 </body></html>
