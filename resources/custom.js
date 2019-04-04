@@ -130,9 +130,6 @@
 			return false;
 		});
 
-		$('.link').click(function(event){
-    		event.stopPropagation();
-		});
 
 		$(window).keydown(function(e) {
 			if (overlayMenu.hasClass('active')) {
@@ -412,7 +409,6 @@
 			$('html, body').animate({ scrollTop: 0 }, 'slow');
 			return false;
 		});
-
 
 		$('a[href^="#"]').on('click', function(event) {
 		    var target = $(this.getAttribute('href'));
