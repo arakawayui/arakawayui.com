@@ -1168,7 +1168,7 @@ Navigation
 /* Navbar light */
 
 .navbar-transparent.navbar-light {
-background-color: #fffc;
+	background: transparent;
 	webkit-box-shadow: none;
 	  -moz-box-shadow: none;
 	       box-shadow: none;
@@ -2062,6 +2062,25 @@ Reset bootstrap navigation styles for small screens
 /* -------------------------------------------------------------------
 Responsive Media Querries
 ------------------------------------------------------------------- */
+
+@media (min-width: 768px) {
+
+.module-hero{
+	background-image: url("../1.jpg");
+}
+
+
+
+}
+
+@media (max-width: 768px) {
+
+.module-hero{
+	background-image: url("../1-mob.jpg");
+}
+
+
+}
 
 @media (min-width: 768px) {
 
