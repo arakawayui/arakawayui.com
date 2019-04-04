@@ -1092,7 +1092,7 @@ Navigation
 }
 
 .navbar-custom .navbar-brand {
-	padding: 10px 15px;
+	padding: 10px 25px;
 	letter-spacing: 4px;
 	font-weight: 400;
 	font-size: 20px;
@@ -2055,6 +2055,8 @@ Reset bootstrap navigation styles for small screens
 .navbar-custom .navbar-nav > li > a {
 	padding-top: 15px;
 	padding-bottom: 15px;
+	
+	padding-left: 25px;
 }
 
 /* -------------------------------------------------------------------
