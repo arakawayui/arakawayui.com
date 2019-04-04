@@ -110,6 +110,13 @@ a:hover, a:focus {
 	outline: 0;
 }
 
+.insta {
+opacity: 0.5;
+}
+.insta:hover, .insta:focus {
+opacity: 0.8;
+}
+
 .bg-dark a {
 	color: #aaa;
 }
@@ -2347,3 +2354,4 @@ Multi-columns-row
 .appeared[data-src], .appeared[data-bkg], .appeared [data-src], .appeared [data-bkg] {
   opacity: 1;
 }
+
