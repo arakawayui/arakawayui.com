@@ -362,26 +362,6 @@
 
 
 		/* ---------------------------------------------- /*
-		 * Progress bars, counters animations
-		/* ---------------------------------------------- */
-
-		$('.progress-bar').each(function(i) {
-			$(this).appear(function() {
-				var percent = $(this).attr('aria-valuenow');
-				$(this).animate({'width' : percent + '%'});
-				$(this).find('span').animate({'opacity' : 1}, 900);
-				$(this).find('span').countTo({from: 0, to: percent, speed: 900, refreshInterval: 30});
-			});
-		});
-
-		$('.counter-item').each(function(i) {
-			$(this).appear(function() {
-				var number = $(this).find('.counter-number').data('number');
-				$(this).find('.counter-number span').countTo({from: 0, to: number, speed: 1200, refreshInterval: 30});
-			});
-		});
-
-		/* ---------------------------------------------- /*
 		 * WOW Animation
 		/* ---------------------------------------------- */
 
@@ -435,6 +415,21 @@
 		});
 
 
+		/* ---------------------------------------------- /*
+		 * popup
+		/* ---------------------------------------------- */
+
+		$(document).ready(function() {
+ 		 $('.image-link').magnificPopup({type:'image'});
+		});
+
+$('.test-popup-link').magnificPopup({
+  type: 'image',
+  preload: [1,3],
+  gallery:{
+    enabled:true
+  }
+});
 
 	});
 
