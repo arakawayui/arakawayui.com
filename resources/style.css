@@ -1302,10 +1302,10 @@ Navigation
 }
 
 /* ------------------------------------------------------------------
-Hero
+front
 ------------------------------------------------------------------- */
 
-.module-hero {
+.module-front {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1315,20 +1315,20 @@ Hero
 	        background-size: cover;
 }
 
-.hero-caption {
+.front-caption {
 	display: table;
 	height: 100%;
 	width: 100%;
 	text-align: center;
 }
 
-.hero-text {
+.front-text {
 	display: table-cell;
 	vertical-align: middle;
 	height: 100%;
 }
 
-/* Hero caption sizes*/
+/* front caption sizes*/
 
 .mh-line-size-1,
 .mh-line-size-2,
@@ -1388,7 +1388,7 @@ Modules
 
 .module,
 .module-small {
-	padding: 140px 0;
+	padding: 70px 0;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1399,7 +1399,7 @@ Modules
 }
 
 .module-small {
-	padding: 70px 0;
+	padding: 50px 0;
 }
 
 .navbar-custom + .module {
@@ -2065,7 +2065,7 @@ Responsive Media Querries
 
 @media (min-width: 768px) {
 
-.module-hero{
+.module-front{
 	background-image: url("../1.jpg");
 }
 
@@ -2075,7 +2075,7 @@ Responsive Media Querries
 
 @media (max-width: 768px) {
 
-.module-hero{
+.module-front{
 	background-image: url("../1-mob.jpg");
 }
 
@@ -2095,7 +2095,7 @@ Responsive Media Querries
 
 @media (max-width: 992px) {
 
-	/* Hero captions */
+	/* front captions */
 
 	.mh-line-size-1 {
 		letter-spacing: 40px;
@@ -2156,7 +2156,7 @@ Responsive Media Querries
 
 @media (max-width: 767px) {
 
-	/* Hero captions */
+	/* front captions */
 
 	.mh-line-size-1 {
 		letter-spacing: 24px;
@@ -2220,7 +2220,7 @@ Responsive Media Querries
 
 @media (max-width: 500px) {
 
-	/* Hero captions */
+	/* front captions */
 
 	.mh-line-size-1 {
 		letter-spacing: 12px;
@@ -2375,4 +2375,5 @@ Multi-columns-row
 .appeared[data-src], .appeared[data-bkg], .appeared [data-src], .appeared [data-bkg] {
   opacity: 1;
 }
+
 

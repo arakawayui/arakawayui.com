@@ -17,13 +17,13 @@
 		 * Initialization general scripts for all pages
 		/* ---------------------------------------------- */
 
-		var moduleHero      = $('#hero'),
+		var modulefront      = $('#front'),
 			overlayMenu     = $('#overlay-menu'),
 			slider          = $('#slides'),
 			navbar          = $('.navbar-custom'),
 			filters         = $('#filters'),
 			worksgrid       = $('#works-grid'),
-			modules         = $('.module-hero, .module, .module-small'),
+			modules         = $('.module-front, .module, .module-small'),
 			windowWidth     = Math.max($(window).width(), window.innerWidth),
 			navbatTrans,
 			mobileTest;
@@ -31,13 +31,13 @@
 		navbarCheck(navbar);
 
 		$(window).resize(function() {
-			buildModuleHero();
+			buildModulefront();
 			windowWidth     = Math.max($(window).width(), window.innerWidth);
 		});
 
 		$(window).scroll(function() {
 			if(windowWidth > 960) {
-				navbarAnimation(navbar, moduleHero);
+				navbarAnimation(navbar, modulefront);
 			}
 		}).scroll();
 
@@ -68,19 +68,19 @@
 		if (mobileTest === true) {
 			$('.module-parallax').css({'background-attachment': 'scroll'});
 		} else {
-			$('#hero.module-parallax').parallax('50%', 0.2);
+			$('#front.module-parallax').parallax('50%', 0.2);
 		}
 
 		/* ---------------------------------------------- /*
 		 * Full height module
 		/* ---------------------------------------------- */
 
-		function buildModuleHero() {
-			if (moduleHero.length > 0) {
-				if (moduleHero.hasClass('module-full-height')) {
-					moduleHero.height($(window).height());
+		function buildModulefront() {
+			if (modulefront.length > 0) {
+				if (modulefront.hasClass('module-full-height')) {
+					modulefront.height($(window).height());
 				} else {
-					moduleHero.height($(window).height() * 0.85);
+					modulefront.height($(window).height() * 0.85);
 				}
 			}
 		}
@@ -97,7 +97,7 @@
 			}
 		}
 
-		function navbarAnimation(navbar, moduleHero) {
+		function navbarAnimation(navbar, modulefront) {
 			var topScroll = $(window).scrollTop();
 			if (navbar.length > 0 && navbatTrans !== false) {
 				if (topScroll >= 5) {
@@ -254,121 +254,6 @@
 		}).resize();
 
 		/* ---------------------------------------------- /*
-		 * Blog grid
-		/* ---------------------------------------------- */
-
-		$('#posts-masonry').imagesLoaded(function() {
-			$('#posts-masonry').isotope({
-				layoutMode: 'masonry',
-				transitionDuration: '0.3s'
-			});
-		});
-
-
-		/* ---------------------------------------------- /*
-		 * Ajax options
-		/* ---------------------------------------------- */
-
-		var pageNumber = 0,
-			workNumberToload = 5;
-
-		var doneText    = 'Done',
-			loadText    = 'More works',
-			loadingText = 'Loading...',
-			errorText   = 'Error! Check the console for more information.';
-
-		/* ---------------------------------------------- /*
-		 * Ajax portfolio
-		/* ---------------------------------------------- */
-
-		$('#show-more').on('click', function() {
-			$(this).text(loadingText);
-
-			setTimeout(function() {
-				ajaxLoad(workNumberToload, pageNumber);
-			}, 300);
-
-			pageNumber++;
-
-			return false;
-		});
-
-		function ajaxLoad(workNumberToload, pageNumber) {
-			var $loadButton = $('#show-more');
-			var dataString = 'numPosts=' + workNumberToload + '&pageNumber=' + pageNumber;
-
-			$.ajax({
-				type: 'GET',
-				data: dataString,
-				dataType: 'html',
-				url: 'assets/php/ajax-load-more/ajax-load-more.php',
-				success: function(data) {
-					var $data = $(data);
-					var start_index = (pageNumber - 1) * workNumberToload;
-					var end_index = + start_index + workNumberToload;
-
-					if ($data.find('.work-item').slice(start_index).length) {
-						var work = $data.find('.work-item').slice(start_index, end_index);
-
-						worksgrid.append(work).isotope('appended', work).resize();
-
-						setTimeout(function() {
-							$loadButton.text(loadText);
-						}, 300);
-
-						$('a.gallery').magnificPopup({
-							type: 'image',
-							gallery: {
-								enabled: true,
-								navigateByImgClick: true,
-								preload: [0,1]
-							},
-							image: {
-								titleSrc: 'title',
-								tError: 'The image could not be loaded.',
-							}
-						});
-
-					} else {
-						setTimeout(function() {
-							$loadButton.text(doneText);
-						}, 300);
-
-						setTimeout(function () {
-							$('#show-more').animate({
-								opacity: 0,
-							}).css('display', 'none');
-						}, 1500);
-
-						$('a.gallery').magnificPopup({
-							type: 'image',
-							gallery: {
-								enabled: true,
-								navigateByImgClick: true,
-								preload: [0,1]
-							},
-							image: {
-								titleSrc: 'title',
-								tError: 'The image could not be loaded.',
-							}
-						});
-					}
-				},
-
-				error: function (jqXHR, textStatus, errorThrown) {
-					console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-
-					setTimeout(function() {
-						$loadButton.removeClass('ss-loading');
-						$loadButton.text(errorText);
-					}, 300);
-
-				}
-			});
-		}
-
-
-		/* ---------------------------------------------- /*
 		 * WOW Animation
 		/* ---------------------------------------------- */
 
@@ -436,7 +321,6 @@ $('.test-popup-link').magnificPopup({
     enabled:true
   }
 });
-
 
 
 
