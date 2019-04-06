@@ -10,6 +10,34 @@ Version: 1.0.4
 General Styles
 ------------------------------------------------------------------ */
 
+ @media (min-width: 768px) {
+
+:root:before {
+  content: url("../1.jpg")
+           url("../3.jpg")
+  /* partial fallback */
+  background-image: url("../1.jpg");
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+}
+
+@media (max-width: 768px) {
+
+:root:before {
+  content: url("../1-mob.jpg")
+           url("../3.jpg")
+  /* partial fallback */
+  background-image: url("../1-mob.jpg");
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+}
+
 body {
 	background: #fff;
 	font: 400 14px/1.8 "Montserrat", sans-serif;
@@ -937,7 +965,7 @@ Modules
 
 .module,
 .module-small {
-	padding: 70px 0;
+padding-top: 50px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;

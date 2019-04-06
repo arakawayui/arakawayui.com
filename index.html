@@ -25,40 +25,6 @@
 	<link href="./resources/style.css" rel="stylesheet"></head>
 <body>
 
-	<style>
-/* body:before will also work
- as will body:after */
-
- @media (min-width: 768px) {
-
-:root:before {
-  content: url("../1.jpg")
-           url("../3.jpg")
-  /* partial fallback */
-  background-image: url("../1.jpg");
-  visibility: hidden;
-  position: absolute;
-  left: -999em;
-}
-
-}
-
-@media (max-width: 768px) {
-
-:root:before {
-  content: url("../1-mob.jpg")
-           url("../3.jpg")
-  /* partial fallback */
-  background-image: url("../1-mob.jpg");
-  visibility: hidden;
-  position: absolute;
-  left: -999em;
-}
-
-}
-
-</style>
-
 	<!-- PRELOADER -->
 	<div class="preloader"></div>
 	<!-- /PRELOADER -->
@@ -168,7 +134,7 @@
 		<!-- /front -->
 
 		<!-- PORTFOLIO -->
-		<section id="portfolio" class="module" style="border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px;">
+		<section id="portfolio" class="module" style="background-color: #fcfcfc4d;border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px;">
 
 			<div class="container">
 
@@ -185,7 +151,7 @@
 				<!-- WORKS GRID -->
 				<div class="row">
 
-					<div id="works-grid" class="content works-grid works-hover-w grid data-packery data-infinite-scroll are-images-unloaded">
+					<div id="works-grid" class="content works-grid works-hover-w grid data-packery">
 
 						<!-- DO NOT DELETE THIS DIV -->
 						<div class="grid-sizer"></div>
@@ -367,7 +333,7 @@
 		<!-- /PORTFOLIO -->
 
 		<!-- ABOUT -->
-		<section id="about" class="module" style="border-top-color: rgba(0, 0, 0, 0.12);border-top-style: solid;border-top-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.25);border-bottom-style: solid;border-bottom-width: 1px;">
+		<section id="about" class="module" style="border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.25);border-bottom-style: solid;border-bottom-width: 1px;">
 
 			<div class="container">
 
@@ -398,7 +364,7 @@ margin-top: -30px;
 margin-bottom: 30px;
 
 opacity: 0.85;"></div>
-						<p style="text-align: center;"> ARAKAWA YUI__= <br/>  || MALE FASHION DESIGN || <br /> // TOKYO + NEW YORK + LONDON + SINGAPORE + ANTWERP + PARIS //  </p>
+						<p style="text-align: center;"> ARAKAWA YUI__= <br/>  || MALE FASHION DESIGN || <br /> // TOKYO + NEW YORK + HONG KONG + LONDON + SINGAPORE + ANTWERP + PARIS \\  </p>
 					</div>
 
 				</div>
@@ -447,5 +413,4 @@ opacity: 0.85;"></div>
 	<script src="./resources/jquery.parallax-1.1.3.js"></script>
 	<script src="./resources/smoothscroll.js"></script>
 	<script src="./resources/custom.js"></script>
-	<script src="./resources/infinite-scroll.pkgd.min.js"></script>
 </body></html>
