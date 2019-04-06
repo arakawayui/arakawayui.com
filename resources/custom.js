@@ -6,10 +6,9 @@
 	 * Preloader
 	/* ---------------------------------------------- */
 
-	$(window).load(function() {
-		$('.loader').fadeOut();
-		$('.page-loader').delay(350).fadeOut('slow');
-	});
+$(window).load(function() {
+   $('.preloader').fadeOut('slow');
+});
 
 	$(document).ready(function() {
 

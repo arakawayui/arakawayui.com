@@ -2,10 +2,10 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="Portfolio of the in Tokyo-based fashion designer Arakawa Yui.">
+	<meta name="author" content="Arakawa Yui">
 
-	<title>Arakawa Yui Portfolio</title>
+	<title>Arakawa Yui</title>
 
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="">
@@ -18,17 +18,49 @@
 
 	<!-- Plugins -->
 	<link href="./resources/magnific-popup.css" rel="stylesheet">
-	<link href="./resources/vertical.css" rel="stylesheet">
 	<link href="./resources/animate.css" rel="stylesheet">
+	<link href="./resources/vertical.css" rel="stylesheet">
 
 	<!-- Template core CSS -->
 	<link href="./resources/style.css" rel="stylesheet"></head>
 <body>
 
+	<style>
+/* body:before will also work
+ as will body:after */
+
+ @media (min-width: 768px) {
+
+:root:before {
+  content: url("../1.jpg")
+           url("../3.jpg")
+  /* partial fallback */
+  background-image: url("../1.jpg");
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+}
+
+@media (max-width: 768px) {
+
+:root:before {
+  content: url("../1-mob.jpg")
+           url("../3.jpg")
+  /* partial fallback */
+  background-image: url("../1-mob.jpg");
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+
+}
+
+</style>
+
 	<!-- PRELOADER -->
-	<div class="page-loader" style="display: none;">
-		<div class="loader" style="display: none;">Loading...</div>
-	</div>
+	<div class="preloader"></div>
 	<!-- /PRELOADER -->
 
 	<!-- OVERLAY MENU -->
@@ -91,7 +123,6 @@
 			<div class="container">
 
 				<div class="navbar-header">
-					<!-- YOU LOGO HERE -->
 					<a class="insta navbar-brand" href="https://www.instagram.com/arakawayui__/">
 						<img src="./instagram.svg" width="30" alt="" style="opacity: 0.6;">
 					</a>
@@ -100,10 +131,8 @@
 				<!-- ICONS NAVBAR -->
 				<ul id="icons-navbar" class="nav navbar-nav navbar-left">
 					<li>
-						<a href="#" id="toggle-menu" class="show-overlay" title="Menu">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+						<a href="#" id="toggle-menu" class="show-overlay" title="Menu" style="font-size: large;">
+							&#9776;
 						</a>
 					</li>
 				</ul>
