@@ -225,7 +225,7 @@ $(window).load(function() {
 						});
 					} else if ($(this).hasClass('wide')) {
 						$(this).css({
-							height : itemHeight / 2
+							height : itemHeight
 						});
 					} else if ($(this).hasClass('wide-tall')) {
 						$(this).css({
