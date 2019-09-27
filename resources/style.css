@@ -713,6 +713,11 @@ Navigation
 	background: rgba(255, 255, 255, 0.7);
 }
 
+
+.navbar-transparent {
+box-shadow: none !important;
+}
+
 /* Navbar transparent */
 
 /*
