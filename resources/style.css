@@ -659,7 +659,6 @@ Navigation
 }
 
 .navbar-custom {
-	background: rgba(10, 10, 10, 0.9);
 	border: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -716,8 +715,8 @@ Navigation
 
 /* Navbar transparent */
 
+/*
 .navbar-transparent {
-	background: transparent;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -741,16 +740,18 @@ Navigation
 .navbar-transparent .show-overlay .icon-bar {
 	background: #fff;
 }
+ */
 
 /* Navbar light */
 
+/*
 .navbar-transparent.navbar-light {
 	background: transparent;
 	webkit-box-shadow: none;
 	  -moz-box-shadow: none;
 	       box-shadow: none;
 }
-
+*/
 .navbar-light {
 	background: rgba(255, 255, 255, 0.95);
 	webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
@@ -782,6 +783,12 @@ Navigation
 	background: rgba(17, 17, 17, 0.7);
 }
 
+.navbar-nav {
+	margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+}
 /* Overlay menu */
 
 .overlay-menu {
@@ -1339,6 +1346,11 @@ Responsive Media Querries
 .mobile{
 	display:none;
 }
+
+	.extra-navbar2{
+		display: none;
+	}
+
 }
 
 @media (max-width: 768px) {
@@ -1409,7 +1421,7 @@ Responsive Media Querries
 
 @media only screen and (max-width: 960px) {
 
-	/* Side and overlay nav */
+	/* Side and overlay nav 
 	.overlay-menu.active {
 		position: absolute;
 	}
@@ -1421,13 +1433,13 @@ Responsive Media Querries
 		position: absolute;
 	}
 
-	/*----------------------------*/
+	----------------------------
 	.navbar-custom {
 		position: absolute;
 		top: 0;
 		width: 100%;
 	}
-
+*/
 }
 
 @media (max-width: 767px) {
@@ -1465,10 +1477,29 @@ Responsive Media Querries
 
 	/* Navbar */
 
-	.extra-navbar {
+	.extra-navbar{
 		display: none;
 	}
 
+	.extra-navbar2{
+		display: inline-block;
+	}
+
+.navbar-custom, .nav > li > a {
+		padding-top: 5px;
+padding-bottom: 0px;
+line-height: 0px;
+	}
+
+.navbar{
+min-height: 40px;
+	}
+
+	.navbar-custom .navbar-brand {
+		padding-top: 0px;
+padding-bottom: 0px;
+height: 0px;
+	}
 	/* Portfolio filters */
 
 	.filters li {
@@ -1653,3 +1684,7 @@ Multi-columns-row
 }
 
 
+.nav::before, .nav::after, .navbar::before, .navbar::after, .navbar-header::before, .navbar-header::after, .navbar-collapse::before, .navbar-collapse::after{
+    display: initial;
+
+}
