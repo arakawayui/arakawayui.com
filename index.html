@@ -95,7 +95,7 @@
 		<!-- NAVIGATION -->
 		<nav class="navbar navbar-custom navbar-light navbar-fixed-top navbar-transparent">
 
-			<div class="container" style="position: fixed; right: 0; left: 0;   text-align: center;">
+			<div class="container" style=" right: 0; left: 0;   text-align: center;">
 
 				<div class="navbar-header">
 					<a class="insta navbar-brand" href="https://www.instagram.com/arakawayui__/">
@@ -130,7 +130,7 @@
 		<!-- /NAVIGATION -->
 
 		<!-- front -->
-		<section id="front" class="module-front module-parallax module-full-height" style="background-position: 50% 0px;">
+		<section id="front" class="module-front module-parallax module-full-height" style="background-position: 50% 0px; z-index: 3;">
 
 			<!-- front TEXT -->
 			<div class="front-caption">
@@ -147,7 +147,7 @@
 		<!-- /front -->
 
 		<!-- PORTFOLIO -->
-		<section id="portfolio" class="module" style="background-color: #fcfcfc4d;border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px;">
+		<section id="portfolio" class="module" style="background-color: #fdfdfd; border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px; z-index: 4;">
 
 			<div class="container">
 
@@ -862,7 +862,7 @@
 		<!-- /PORTFOLIO -->
 
 		<!-- ABOUT -->
-		<section id="about" class="module" style="border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.25);border-bottom-style: solid;border-bottom-width: 1px;">
+		<section id="about" class="module" style="background-color: var(--b3f, #fafafa); border-top-color: rgba(0, 0, 0, 0.02);border-top-style: solid;border-top-width: 1px; border-bottom-color: rgba(0, 0, 0, 0.02);border-bottom-style: solid;border-bottom-width: 1px; z-index: 2;">
 
 			<div class="container">
 
@@ -870,7 +870,13 @@
 			
 					<div class="col-sm-12">
 						<h1 class="mh-line-size-1 font-alt m-b-50" style="text-align: center"><span style="margin-right: -30px;letter-spacing: 30px; font-size: 30px; font-family: 'Open Sans Condensed', sans-serif;">ABOUT</span></h1>
-						<div><img class="profile" alt="profile" src="irischui.jpg" style="border: 1px solid #9999994d;
+
+						<div class="aboutpopup design web photo" style="position: relative; width: 280px;
+
+height: 280px;
+
+margin: auto;">							<a class="test-popup-link" href="irischui.jpg" title="Iris Chui - Portfolio">
+<img class="aboutimage appear profile" alt="profile" data-src="./irischui.jpg"  src="irischui.jpg" style="border: 1px solid #9999994d;
 
 border-radius: 50%;
 
@@ -880,19 +886,16 @@ margin-left: auto;
 
 display: table;
 
-margin-bottom: 20px;
-
 vertical-align: middle;
 
 height: 250px;
 
 width: 250px;
 
-margin-top: -30px;
-
-margin-bottom: 30px;
-
-opacity: 0.85;"></div>
+opacity: 0.85;">
+								<div class="work-caption font-alt">
+									<h3 class="work-title">IRIS CHUI__= <br/> || FASHION DESIGNER ||<br />// MEN'S + UNISEX \\</h3>
+								</div></a></div>
 						<p style="text-align: center;"> IRIS CHUI__= <br/>  || FASHION DESIGNER || <br /> // MEN'S + UNISEX \\  </p>
 					</div>
 
@@ -903,9 +906,9 @@ opacity: 0.85;"></div>
 		<!-- /ABOUT -->
 
 		<!-- FOOTER -->
-		<footer class="module module-parallax" data-background="3.jpg" style="padding: 140px 0; background-image: url(&quot;3.jpg&quot;); background-position: 50% 0px;">
+		<footer class="module module-parallax second" data-background="3.jpg">
  
-			<div class="container">
+			<div class="container" id="copyrightcontainer">
 
 				<div class="row">
 
