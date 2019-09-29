@@ -25,7 +25,8 @@ http://www.gnu.org/licenses/gpl.html
 		var firstTop;
 		var paddingTop = 0;
 		$('#copyrightcontainer').addClass('paralax');
-		
+		$('#titlecontainer').addClass('paralaxtitle');
+
 		//get the starting position of each element to have parallax applied to it		
 		$this.each(function(){
 		    firstTop = $this.offset().top;

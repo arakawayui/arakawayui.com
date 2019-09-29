@@ -2,6 +2,7 @@
 
 	"use strict";
 
+
 	/* ---------------------------------------------- /*
 	 * Preloader
 	/* ---------------------------------------------- */
@@ -28,6 +29,7 @@ $(window).load(function() {
 			mobileTest;
 
 		navbarCheck(navbar);
+
 
 		$(window).resize(function() {
 			buildModulefront();
@@ -678,3 +680,43 @@ appear(
 
   }())
 );
+
+
+
+
+var Hero = ( function($){
+
+    var init = function( options ){
+
+        /** Banner Parallax */
+        $(window).scroll(function () {
+            scrollBanner();
+        });
+
+    };
+
+
+    /**
+     * Parallax Banner Function
+     */
+    var scrollBanner = function() {
+
+       /** Scroll and fade out the banner text */
+        $('.paralaxtitle').css({
+            'margin-top' : -( $(this).scrollTop() / 5 ) + "px",
+            'opacity' : 1 - ( $(this).scrollTop() / 400 ),
+            '-ms-filter' : 'progid:DXImageTransform.Microsoft.Alpha(Opacity=' + 1 - ( $(this).scrollTop() / 400 ) + ')'
+        });
+
+    };
+
+    /** Public API */
+    return {
+        init: init,
+    }
+
+})(jQuery);
+
+jQuery(document).ready( function() {
+    Hero.init();
+});

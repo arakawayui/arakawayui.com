@@ -938,7 +938,7 @@ Modules
 
 .module,
 .module-small {
-padding-top: 50px;
+padding-top: 40px;
 padding-bottom: 15px;
 	position: relative;
 	background-repeat: no-repeat;
@@ -1352,6 +1352,14 @@ Responsive Media Querries
 }
 
 
+	.extra-navbar2{
+		display: none;
+	}
+
+}
+
+
+@media (min-width: 500px) {
 .full{
 	display:initial;
 
@@ -1360,9 +1368,16 @@ Responsive Media Querries
 	display:none;
 }
 
-	.extra-navbar2{
-		display: none;
-	}
+}
+
+@media (max-width: 500px) {
+.full{
+	display:none;
+
+}
+.mobile{
+	display:initial;
+}
 
 }
 
@@ -1371,16 +1386,6 @@ Responsive Media Querries
 .module-front{
 	background-image: url("../1-mob.jpg");
 }
-
-
-.full{
-	display:none;
-
-}
-.mobile{
-	display:initial;
-}
-
 }
 
 @media (min-width: 768px) {
@@ -1587,6 +1592,25 @@ height: 0px;
 
 .paralax{
   position: fixed !important; top:initial !important; bottom:115px;
+}
+
+}
+
+
+@media (max-width: 500px) {
+.paralaxtitle{
+  position: absolute !important;
+  margin-top: -50px !important;
+}
+
+}
+
+
+@media (min-width: 500px) {
+
+.paralaxtitle{
+  position: fixed !important;
+  margin-top: -50px !important;
 }
 
 }
