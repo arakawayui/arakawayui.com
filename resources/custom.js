@@ -252,110 +252,6 @@ $(window).load(function() {
 
 		}).resize();
 
-
-		/* ---------------------------------------------- /*
-		 * Ajax options
-		/* ---------------------------------------------- */
-
-		var pageNumber = 0,
-			workNumberToload = 5;
-
-		var doneText    = 'Done',
-			loadText    = 'More works',
-			loadingText = 'Loading...',
-			errorText   = 'Error! Check the console for more information.';
-
-		/* ---------------------------------------------- /*
-		 * Ajax portfolio
-		/* ---------------------------------------------- */
-
-		$('#show-more').on('click', function() {
-			$(this).text(loadingText);
-
-			setTimeout(function() {
-				ajaxLoad(workNumberToload, pageNumber);
-			}, 300);
-
-			pageNumber++;
-
-			return false;
-		});
-
-		function ajaxLoad(workNumberToload, pageNumber) {
-			var $loadButton = $('#show-more');
-			var dataString = 'numPosts=' + workNumberToload + '&pageNumber=' + pageNumber;
-
-			$.ajax({
-				type: 'GET',
-				data: dataString,
-				dataType: 'html',
-				url: 'assets/php/ajax-load-more/ajax-load-more.php',
-				success: function(data) {
-					var $data = $(data);
-					var start_index = (pageNumber - 1) * workNumberToload;
-					var end_index = + start_index + workNumberToload;
-
-					if ($data.find('.work-item').slice(start_index).length) {
-						var work = $data.find('.work-item').slice(start_index, end_index);
-
-						worksgrid.append(work).isotope('appended', work).resize();
-
-						setTimeout(function() {
-							$loadButton.text(loadText);
-						}, 300);
-
-						$('a.gallery').magnificPopup({
-							type: 'image',
-							gallery: {
-								enabled: true,
-								navigateByImgClick: true,
-								preload: [0,1]
-							},
-							image: {
-								titleSrc: 'title',
-								tError: 'The image could not be loaded.',
-							}
-						});
-
-					} else {
-						setTimeout(function() {
-							$loadButton.text(doneText);
-						}, 300);
-
-						setTimeout(function () {
-							$('#show-more').animate({
-								opacity: 0,
-							}).css('display', 'none');
-						}, 1500);
-
-						$('a.gallery').magnificPopup({
-							type: 'image',
-							gallery: {
-								enabled: true,
-								navigateByImgClick: true,
-								preload: [0,1]
-							},
-							image: {
-								titleSrc: 'title',
-								tError: 'The image could not be loaded.',
-							}
-						});
-					}
-				},
-
-				error: function (jqXHR, textStatus, errorThrown) {
-					console.log(jqXHR + " :: " + textStatus + " :: " + errorThrown);
-
-					setTimeout(function() {
-						$loadButton.removeClass('ss-loading');
-						$loadButton.text(errorText);
-					}, 300);
-
-				}
-			});
-		}
-
-
 		/* ---------------------------------------------- /*
 		 * WOW Animation
 		/* ---------------------------------------------- */
@@ -365,7 +261,6 @@ $(window).load(function() {
 		});
 
 		wow.init();
-
 
 		/* ---------------------------------------------- /*
 		 * Scroll Animation
@@ -408,20 +303,10 @@ $(window).load(function() {
 		    }
 		});
 
-
-
-
-
-
 var $grid = $('.works-grid').isotope({
   // Isotope options...
   itemSelector: '.work-item', 
 });
-
-
-
-
-
 
 	});
 
@@ -442,7 +327,6 @@ $('.test-popup-link').magnificPopup({
     enabled:true
   }
 });
-
 
 
 		/* ---------------------------------------------- /*
