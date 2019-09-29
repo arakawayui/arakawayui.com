@@ -196,7 +196,7 @@ $(window).load(function() {
 
 			var windowWidth    = Math.max($(window).width(), window.innerWidth),
 				itemWidht      = $('.grid-sizer').width(),
-				itemHeight     = Math.floor(itemWidht * 0.95),
+				itemHeight     = itemWidht,
 				itemTallHeight = itemHeight * 2;
 
 			if (windowWidth > 500) {
@@ -684,7 +684,7 @@ appear(
 
 
 
-var Hero = ( function($){
+var Iris = ( function($){
 
     var init = function( options ){
 
@@ -718,5 +718,5 @@ var Hero = ( function($){
 })(jQuery);
 
 jQuery(document).ready( function() {
-    Hero.init();
+    Iris.init();
 });
