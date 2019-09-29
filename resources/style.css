@@ -939,6 +939,7 @@ Modules
 .module,
 .module-small {
 padding-top: 50px;
+padding-bottom: 50px;
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -1298,6 +1299,40 @@ Responsive Media Querries
 ------------------------------------------------------------------- */
 
 
+.navbar-transparent {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background: rgba(255, 255, 255);
+}
+
+
+
+@media (min-width: 992px) {
+
+.navbar-transparent {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+}
+
+@media (min-width: 1200px) {
+
+.navbar-transparent {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+}
+
+
+@media (min-width: 1310px) {
+
+.navbar-transparent {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+}
+
+
 
 #copyrightcontainer{
   position: absolute;
@@ -1308,6 +1343,9 @@ Responsive Media Querries
 
 
 @media (min-width: 768px) {
+
+
+
 
 .module-front{
 	background-image: url("../1.jpg");
@@ -1357,6 +1395,7 @@ Responsive Media Querries
 
 
 @media (max-width: 992px) {
+
 
 	/* front captions */
 
@@ -1581,7 +1620,9 @@ Multi-columns-row
 	.multi-columns-row .col-sm-1:nth-child(12n + 13) { clear: left; }
 }
 
+
 @media (min-width: 992px) {
+
 
 	.multi-columns-row .col-sm-6:nth-child(2n + 3) { clear: none; }
 	.multi-columns-row .col-sm-4:nth-child(3n + 4) { clear: none; }
