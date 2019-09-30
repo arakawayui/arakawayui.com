@@ -61,6 +61,19 @@
 		 	}
 		 });
 
+
+		 $('.main-carousel').flickity({
+		  // options
+		  cellAlign: 'left',
+		  contain: true,
+		  wrapAround: true,
+		  hash: true,
+		  initialIndex: '.is-initial-select',
+		  fade: true,
+		  adaptiveHeight: true,
+		  draggable: false
+		});
+
 		/* ---------------------------------------------- /*
 		 * Parallax
 		 /* ---------------------------------------------- */
