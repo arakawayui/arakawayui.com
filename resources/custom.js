@@ -186,7 +186,6 @@
 		 	itemHeight     = itemWidth,
 		 	itemTallHeight = itemHeight * 2;
 
-		 	if (windowWidth > 500) {
 		 		$('.work-item').each(function() {
 		 			if ($(this).hasClass('tall')) {
 		 				$(this).css({
@@ -206,27 +205,7 @@
 		 				});
 		 			}
 		 		});
-		 	} else {
-		 		$('.work-item').each(function() {
-		 			if ($(this).hasClass('tall')) {
-		 				$(this).css({
-		 					height : itemTallHeight
-		 				});
-		 			} else if ($(this).hasClass('wide')) {
-		 				$(this).css({
-		 					height : itemHeight
-		 				});
-		 			} else if ($(this).hasClass('wide-tall')) {
-		 				$(this).css({
-		 					height : itemHeight
-		 				});
-		 			} else {
-		 				$(this).css({
-		 					height : itemHeight
-		 				});
-		 			}
-		 		});
-		 	}
+
 
 		 }).resize();
 
@@ -272,9 +251,11 @@
 		 });
 
 		 var $grid = $('.works-grid').packery({
-  // Isotope options...
+		 	gutter: '.gutter-sizer',
   itemSelector: '.work-item', 
   columnWidth: '.grid-sizer',
+percentPosition: true,
+
 });
 
 		});
