@@ -39,10 +39,7 @@
 		 	}
 		 }).scroll();
 
-var lazyLoad = new LazyLoad({
-    elements_selector: ".lazy",
-    // More options here
-});
+
 		/* ---------------------------------------------- /*
 		 * Mobile detect
 		 /* ---------------------------------------------- */

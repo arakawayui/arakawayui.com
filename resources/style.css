@@ -1834,3 +1834,16 @@ Fixes the Firefox anomaly while images are loading
         visibility: hidden;
     }
 }
+
+
+			img:not(.initial) {
+				transition: opacity 1s;
+			}
+			img.initial,
+			img.loaded,
+			img.error {
+				opacity: 1;
+			}
+			img:not([src]) {
+				visibility: hidden;
+			}
