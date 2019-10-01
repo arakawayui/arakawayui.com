@@ -1605,7 +1605,7 @@ Multi-columns-row
 
 
 .appear[data-src], .appear[data-bkg], .appear [data-src], .appear [data-bkg] {
-	opacity: 0.6;
+	opacity: 0;
 	-webkit-transition: opacity 1s ease-in;
 	-moz-transition: opacity 1s ease-in;
 	transition: opacity 1s ease-in;
