@@ -1605,7 +1605,7 @@ Multi-columns-row
 
 
 .appear[data-src], .appear[data-bkg], .appear [data-src], .appear [data-bkg] {
-	opacity: 0;
+	opacity: 0.6;
 	-webkit-transition: opacity 1s ease-in;
 	-moz-transition: opacity 1s ease-in;
 	transition: opacity 1s ease-in;
@@ -1806,8 +1806,9 @@ letter-spacing: 15px; font-family: 'Open Sans Condensed', sans-serif;}
 
 .flickity-prev-next-button.previous {
     left: -40px !important;
+}
 
-}.flickity-prev-next-button.next {
+.flickity-prev-next-button.next {
     right: -45px !important;
 }
 
@@ -1824,12 +1825,6 @@ This value depends on your layout.
     min-height: 150px;
 }
 
-/*
-Avoid empty images to appear as broken
-*/
-img:not([src]):not([srcset]) {
-    visibility: hidden;
-}
 
 /* 
 Fixes the Firefox anomaly while images are loading
