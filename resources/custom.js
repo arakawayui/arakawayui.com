@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", yall);
 
 	"use strict";
 
-
 	/* ---------------------------------------------- /*
 	 * Preloader
 	 /* ---------------------------------------------- */
@@ -30,7 +29,6 @@ document.addEventListener("DOMContentLoaded", yall);
 		 mobileTest;
 
 		 navbarCheck(navbar);
-
 
 		 $(window).resize(function() {
 		 	buildModulefront();
@@ -266,7 +264,6 @@ document.addEventListener("DOMContentLoaded", yall);
 		 });
 
 		 var $grid = $('.works-grid').packery({
-		 	gutter: '.gutter-sizer',
   itemSelector: '.work-item', 
   columnWidth: '.grid-sizer',
 percentPosition: true,
