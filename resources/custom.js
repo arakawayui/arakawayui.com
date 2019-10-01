@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", yall);
-
 (function($){
 
 	"use strict";
@@ -41,6 +39,10 @@ document.addEventListener("DOMContentLoaded", yall);
 		 	}
 		 }).scroll();
 
+var lazyLoad = new LazyLoad({
+    elements_selector: ".lazy",
+    // More options here
+});
 		/* ---------------------------------------------- /*
 		 * Mobile detect
 		 /* ---------------------------------------------- */
