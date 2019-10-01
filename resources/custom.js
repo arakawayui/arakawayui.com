@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", yall);
 	 * Preloader
 	 /* ---------------------------------------------- */
 
-	 // $(window).load(function() {
-	 // 	$('.preloader').fadeOut('slow');
-	 // });
+	 $(window).load(function() {
+	 	$('.preloader').fadeOut('slow');
+	 });
 
 	 $(document).ready(function() {
 
