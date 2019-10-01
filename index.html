@@ -1125,7 +1125,7 @@
 					console.log(
 						Date.now(),
 						eventName,
-						element.getAttribute("data-src")
+						element.getAttribute("data-src"),
 					);
 				}
 				var callback_enter = function(element) {
@@ -1150,6 +1150,8 @@
 				};
 				var ll = new LazyLoad({
 					threshold: 0,
+						class_loading:"appear",
+						class_loaded:"appeared",
 					// Assign the callbacks defined above
 					callback_enter: callback_enter,
 					callback_exit: callback_exit,
@@ -1159,7 +1161,7 @@
 					callback_finish: callback_finish
 				});
 			})();
-			
+
 // CustomEvent micro-polyfill for Internet Explorer
 (function () {
     if (typeof window.CustomEvent === "function") {
