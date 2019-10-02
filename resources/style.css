@@ -1246,7 +1246,6 @@ Responsive Media Querries
 	transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
 
-
 .aboutpopup:hover .work-caption {
 	opacity: 1;
 	top: 50%;
@@ -1304,8 +1303,6 @@ Responsive Media Querries
 	url('../fonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
 
-
-
 .fullsize{
 	height: 100%; width: 100%;
 }
@@ -1333,7 +1330,6 @@ letter-spacing: 15px; font-family: 'Open Sans Condensed', sans-serif;}
 .flickity-viewport {
   transition: height 0.2s;
 }
-
 
 .flickity-button {
 	top: 140px !important;
