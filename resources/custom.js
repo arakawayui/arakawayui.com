@@ -18,9 +18,7 @@
 
 		 var modulefront      = $('#front'),
 		 overlayMenu     = $('#overlay-menu'),
-		 slider          = $('#slides'),
 		 navbar          = $('.navbar-custom'),
-		 filters         = $('#filters'),
 		 modules         = $('.module-front, .module, .module-small'),
 		 windowWidth     = Math.max($(window).width(), window.innerWidth),
 		 navbatTrans,
