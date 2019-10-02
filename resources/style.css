@@ -1351,15 +1351,6 @@ letter-spacing: 15px; font-family: 'Open Sans Condensed', sans-serif;}
 	top: 260px;;
 }
 
-/*
-Makes images container to occupy some space 
-when the images aren't loaded yet.
-This value depends on your layout.
-*/
-.work-item {
-    min-height: 150px;
-}
-
 /* 
 Fixes the Firefox anomaly while images are loading
 */
