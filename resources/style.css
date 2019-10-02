@@ -1287,6 +1287,7 @@ Responsive Media Querries
 	url('../fonts/open-sans-condensed-v14-latin-300.woff') format('woff'), /* Modern Browsers */
 	url('../fonts/open-sans-condensed-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
 	url('../fonts/open-sans-condensed-v14-latin-300.svg#OpenSansCondensed') format('svg'); /* Legacy iOS */
+	font-display: fallback;
 }
 
 /* raleway-regular - latin */
@@ -1301,6 +1302,7 @@ Responsive Media Querries
 	url('../fonts/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
 	url('../fonts/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 	url('../fonts/raleway-v14-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+	font-display: fallback;
 }
 
 .fullsize{
