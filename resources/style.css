@@ -778,7 +778,7 @@ Preloader
 
 .preloader {
 
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -786,8 +786,10 @@ Preloader
 	z-index: 9999;
 	background-image: url('./index.svg');
 	background-repeat: no-repeat; 
-	background-color: #ffffffe6;
-	background-position: center;
+	background-color: #fff;  
+	background-position: top right;
+	background-size: 3%;
+}
 
 }
 
