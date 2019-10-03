@@ -14,12 +14,6 @@ https://flickity.metafizzy.co
   height: 100%;
 }
 
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
 /* ---- flickity-button ---- */
 
 .flickity-button {
@@ -40,7 +34,7 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button:active {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .flickity-button:disabled {

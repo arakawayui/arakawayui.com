@@ -6,9 +6,12 @@
 	 * Preloader
 	 /* ---------------------------------------------- */
 
-	 $(document).ready(function() {
+	 $(window).load(function() {
 		$(this).scrollTop(0);
-	 	$('.preloader').fadeOut(3000);
+	 });
+
+	 $(document).ready(function() {
+	 	$('.preloader').fadeOut('slow');
 		/* ---------------------------------------------- /*
 		 * Initialization general scripts for all pages
 		 /* ---------------------------------------------- */

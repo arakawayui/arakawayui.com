@@ -1,9 +1,4 @@
 /* ------------------------------------------------------------------
-Project: Vortex
-Version: 1.0.4
------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------
 General Styles
 ------------------------------------------------------------------ */
 
@@ -48,10 +43,6 @@ img {
 	height: auto;
 }
 
-iframe {
-	border: 0;
-}
-
 /* ------------------------------------------------------------------
 Selection
 ------------------------------------------------------------------ */
@@ -72,12 +63,10 @@ Selection
 }
 
 /* ------------------------------------------------------------------
-Transition elsements
+Transition elements
 ------------------------------------------------------------------- */
 
-a,
-.btn,
-.navbar a {
+a,.navbar a {
 	-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 	-moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 	-o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
@@ -92,34 +81,6 @@ a,
 	transition: all 0.4s ease-in-out 0s;
 }
 
-/* ------------------------------------------------------------------
-Reset box-shadow
-------------------------------------------------------------------- */
-
-.btn,
-.well,
-.panel,
-.progress,
-.form-control, .form-control:hover, .form-control:focus {
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-ms-box-shadow: none;
-	-o-box-shadow: none;
-	box-shadow: none;
-}
-
-/* ------------------------------------------------------------------
-Reset border-radius
-------------------------------------------------------------------- */
-
-.well, .label, .alert,
-.modal-content {
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	-ms-border-radius: 2px;
-	-o-border-radius: 2px;
-	border-radius: 2px;
-}
 
 /* ------------------------------------------------------------------
 Typography
@@ -142,15 +103,6 @@ a:hover, a:focus {
 	opacity: 0.8;
 }
 
-.bg-dark a {
-	color: #aaa;
-}
-
-.bg-dark a:hover,
-.bg-dark a:focus {
-	color: #fff;
-}
-
 .text-light {
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -160,7 +112,7 @@ a:hover, a:focus {
 	color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h5, .h1, .h2, .h3, .h5 {
 	line-height: 1.4;
 	font-weight: 400;
 	color: #111;
@@ -178,110 +130,12 @@ h3, .h3 {
 	font-size: 18px;
 }
 
-h4, .h4 {
-	font-size: 16px;
-}
-
 h5, .h5 {
 	font-size: 14px;
 }
 
-h6, .h6 {
-	font-size: 12px;
-}
-
-p, ol, ul, blockquote {
+p, ul {
 	margin: 0 0 20px;
-}
-
-/* ------------------------------------------------------------------
-Overlays
-------------------------------------------------------------------- */
-
-.bg-light {
-	background-color: #f7f7f7;
-	height: 100%;
-	width: 100%;
-}
-
-.bg-dark {
-	background-color: #111;
-	height: 100%;
-	width: 100%;
-}
-
-.bg-dark,
-.bg-dark-30,
-.bg-dark-60,
-.bg-dark-90,
-.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6,
-.bg-dark-30 h1, .bg-dark-30 h2, .bg-dark-30 h3, .bg-dark-30 h4, .bg-dark-30 h5, .bg-dark-30 h6,
-.bg-dark-60 h1, .bg-dark-60 h2, .bg-dark-60 h3, .bg-dark-60 h4, .bg-dark-60 h5, .bg-dark-60 h6,
-.bg-dark-90 h1, .bg-dark-90 h2, .bg-dark-90 h3, .bg-dark-90 h4, .bg-dark-90 h5, .bg-dark-90 h6 {
-	color: #fff;
-}
-
-.bg-film:before,
-.bg-dark-30:before,
-.bg-dark-60:before,
-.bg-dark-90:before,
-.bg-light-30:before,
-.bg-light-60:before,
-.bg-light-90:before {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: 0;
-}
-
-.bg-dark-30:before {
-	background: rgba(34, 34, 34, 0.3);
-	content: "";
-	left: 0;
-	top: 0;
-}
-
-.bg-dark-60:before {
-	background: rgba(34, 34, 34, 0.6);
-	content: "";
-	left: 0;
-	top: 0;
-}
-
-.bg-dark-90:before {
-	background: rgba(34, 34, 34, 0.9);
-	content: "";
-	left: 0;
-	top: 0;
-}
-
-.bg-light-30:before {
-	background: rgba(255, 255, 255, 0.3);
-	content: "";
-	left: 0;
-	top: 0;
-}
-
-.bg-light-60:before {
-	background: rgba(255, 255, 255, 0.6);
-	content: "";
-	left: 0;
-	top: 0;
-}
-
-.bg-light-90:before {
-	background: rgba(255, 255, 255, 0.9);
-	content: "";
-	left: 0;
-	top: 0;
-}
-
-.bg-film:before {
-	background: url(../images/dot.gif);
-	opacity: 0.06;
-	content: "";
-	left: 0;
-	top: 0;
 }
 
 /* ------------------------------------------------------------------
@@ -325,30 +179,6 @@ Navigation
 	color: rgba(255, 255, 255, 0.7);
 }
 
-.show-overlay .icon-bar {
-	margin-top: 2px;
-}
-
-.show-overlay .icon-bar + .icon-bar {
-	margin-top: 4px;
-}
-
-.show-overlay .icon-bar {
-	background: #fff;
-	display: block;
-	height: 2px;
-	width: 16px;
-}
-
-.navbar-custom.show-overlay .icon-bar {
-	background: #fff;
-}
-
-.navbar-custom .show-overlay:hover .icon-bar {
-	background: rgba(255, 255, 255, 0.7);
-}
-
-
 .navbar-transparent {
 	box-shadow: none !important;
 }
@@ -374,14 +204,6 @@ Navigation
 .navbar-light .dropdown-menu > li > a:hover {
 	background: none;
 	color: rgba(17, 17, 17, 0.7);
-}
-
-.navbar-light .show-overlay .icon-bar {
-	background: #111;
-}
-
-.navbar-light .show-overlay:hover .icon-bar {
-	background: rgba(17, 17, 17, 0.7);
 }
 
 .navbar-nav {
@@ -518,9 +340,7 @@ front
 .mh-line-size-1,
 .mh-line-size-2,
 .mh-line-size-3,
-.mh-line-size-4,
-.mh-line-size-5,
-.mh-line-size-6 {
+.mh-line-size-4 {
 	font-weight: 400;
 	margin: 0;
 }
@@ -549,30 +369,17 @@ front
 	opacity: 0.6;
 }
 
-.mh-line-size-5 {
-	letter-spacing: 3px;
-	font-size: 14px;
-	opacity: 0.6;
-}
-
-.mh-line-size-6 {
-	font-size: 15px;
-	opacity: 0.6;
-}
-
 /* ------------------------------------------------------------------
 Modules
 ------------------------------------------------------------------- */
 
 .wrapper {
-	/*background: #fff;*/
 	overflow: hidden;
 	margin: 0 auto;
 	width: 100%;
 }
 
-.module,
-.module-small {
+.module {
 	padding-top: 40px;
 	padding-bottom: 15px;
 	position: relative;
@@ -584,16 +391,8 @@ Modules
 	background-size: cover;
 }
 
-.module-small {
-	padding: 50px 0;
-}
-
 .navbar-custom + .module {
 	padding: 200px 0;
-}
-
-.navbar-custom + .module-small {
-	padding: 130px 0;
 }
 
 .module-parallax {
@@ -618,14 +417,6 @@ Modules
 .module-icon {
 	font-size: 48px;
 	margin-bottom: 70px;
-}
-
-.module-title + .module-subtitle {
-	margin-top: -35px;
-}
-
-.divider {
-	margin: 0;
 }
 
 .copyright {
@@ -706,19 +497,8 @@ item
 	margin: 6px 0 6px;
 }
 
-.work-descr {
-	font-size: 11px;
-	color: rgba(255, 255, 255, 0.75);
-}
-
-/* White hover */
-
 .works-hover-w .work-title {
 	color: #111;
-}
-
-.works-hover-w .work-descr {
-	color: rgba(17, 17, 17, 0.75);
 }
 
 /* ------------------------------------------------------------------
@@ -762,16 +542,6 @@ Portfolio Single
 	font-size: 12px;
 }
 
-.project-details {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.project-details li {
-	padding: 0 0 10px;
-}
-
 /* ------------------------------------------------------------------
 Preloader
 ------------------------------------------------------------------- */
@@ -789,18 +559,6 @@ Preloader
 	background-color: #fff;  
 	background-position: top right;
 	background-size: 3%;
-}
-
-}
-
-.page-loader {
-	background: #fff;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 9998;
 }
 
 .loader {
@@ -1275,6 +1033,7 @@ Responsive Media Querries
 	url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
 	url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
 	url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+	font-display: fallback;
 }
 
 /* open-sans-condensed-300 - latin */

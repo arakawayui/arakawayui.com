@@ -1,0 +1,558 @@
+/* ------------------------------------------------------------------
+General Styles
+------------------------------------------------------------------ */
+
+@media (min-width: 768px) {
+  :root:before {
+    content: url("../1.jpg")
+		url("../3.jpg")
+		background-image: url("../1.jpg");
+    visibility: hidden;
+    position: absolute;
+    left: -999em;
+  }
+}
+
+@media (max-width: 768px) {
+  :root:before {
+    content: url("../1-mob.jpg")
+		url("../3.jpg")
+		background-image: url("../1-mob.jpg");
+    visibility: hidden;
+    position: absolute;
+    left: -999em;
+  }
+}
+
+body {
+  background: #fff;
+  font: 400 14px/1.8 "Montserrat", sans-serif;
+  color: #777;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------------------------------
+Selection
+------------------------------------------------------------------ */
+
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #000;
+  color: #fff;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------
+Transition elements
+------------------------------------------------------------------- */
+
+a,.navbar a {
+  -webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+
+.overlay-menu {
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+/* ------------------------------------------------------------------
+Reset box-shadow
+------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------
+Reset border-radius
+------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------
+Typography
+------------------------------------------------------------------- */
+
+a {
+  color: rgba(17, 17, 17, 0.55);
+}
+
+a:hover,a:focus {
+  text-decoration: none;
+  color: #111;
+  outline: 0;
+}
+
+.insta {
+  opacity: 0.5;
+}
+
+.insta:hover,.insta:focus {
+  opacity: 0.8;
+}
+
+.text-light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.text-light h1,.text-light h2,.text-light h3,.text-light h4,.text-light h5,.text-light h6,.text-light .h1,.text-light .h2,.text-light .h3,.text-light .h4,.text-light .h5,.text-light .h6 {
+  color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  line-height: 1.4;
+  font-weight: 400;
+  color: #111;
+}
+
+h1,.h1 {
+  font-size: 28px;
+}
+
+h2,.h2 {
+  font-size: 24px;
+}
+
+h3,.h3 {
+  font-size: 18px;
+}
+
+h4,.h4 {
+  font-size: 16px;
+}
+
+h5,.h5 {
+  font-size: 14px;
+}
+
+h6,.h6 {
+  font-size: 12px;
+}
+
+p,ul {
+  margin: 0 0 20px;
+}
+
+/* ------------------------------------------------------------------
+Overlays
+------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------
+Navigation
+------------------------------------------------------------------- */
+
+.navbar-custom {
+  -webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+
+.navbar-custom {
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.navbar-custom .navbar-brand {
+  padding: 10px 25px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.navbar-custom a {
+  color: #fff;
+}
+
+.navbar-custom .nav > li > a:focus,.navbar-custom .nav > li > a:hover,.navbar-custom .nav .open > a,.navbar-custom .nav .open > a:focus,.navbar-custom .nav .open > a:hover {
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-transparent {
+  box-shadow: none !important;
+}
+
+.navbar-light {
+  background: rgba(255, 255, 255, 0.95);
+  webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-light a,.navbar-light .navbar-brand {
+  color: #111;
+}
+
+.navbar-light .nav > li > a:focus,.navbar-light .nav > li > a:hover,.navbar-light .nav .open > a,.navbar-light .nav .open > a:focus,.navbar-light .nav .open > a:hover {
+  background: none;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.navbar-nav {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+/* Overlay menu */
+
+.overlay-menu {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  display: table;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  z-index: 9999;
+  opacity: 0;
+}
+
+/* Hide menu link */
+
+.navigation-hide {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+}
+
+.navigation-hide:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.overlay-menu-inner {
+  vertical-align: middle;
+  display: table-cell;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay-menu-nav {
+  max-width: 300px;
+  margin: 0 auto 60px;
+}
+
+.overlay-navigation-footer {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  width: 100%;
+  color: #666;
+}
+
+/* Overlay navbar */
+
+#nav,#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav > li > a {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 24px;
+  color: #FDFDFD;
+}
+
+#nav li a:hover {
+  color: #fff;
+}
+
+#nav li ul {
+  display: none;
+  padding: 5px 0;
+  margin: 5px 0 10px;
+}
+
+#nav li ul li a {
+  display: inline-block;
+  padding: 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  color: #666;
+}
+
+/* ------------------------------------------------------------------
+front
+------------------------------------------------------------------- */
+
+.module-front {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.front-caption {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.front-text {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+/* front caption sizes*/
+
+.mh-line-size-1,.mh-line-size-2,.mh-line-size-3,.mh-line-size-4,.mh-line-size-5,.mh-line-size-6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.mh-line-size-1 {
+  letter-spacing: 50px;
+  font-size: 30px;
+  opacity: 0.9;
+}
+
+.mh-line-size-2 {
+  letter-spacing: 40px;
+  font-size: 26px;
+  opacity: 0.9;
+}
+
+.mh-line-size-3 {
+  letter-spacing: 24px;
+  font-size: 26px;
+  opacity: 0.8;
+}
+
+.mh-line-size-4 {
+  letter-spacing: 10px;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.mh-line-size-5 {
+  letter-spacing: 3px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.mh-line-size-6 {
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+/* ------------------------------------------------------------------
+Modules
+------------------------------------------------------------------- */
+
+.wrapper {
+  /*background: #fff;*/
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.module {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar-custom + .module {
+  padding: 200px 0;
+}
+
+.module-parallax {
+  background-attachment: fixed;
+}
+
+/* Module titles */
+
+.module-title {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+.module-icon {
+  font-size: 48px;
+  margin-bottom: 70px;
+}
+
+.copyright {
+  padding: 0 5px;
+}
+
+/* ------------------------------------------------------------------
+grid
+------------------------------------------------------------------- */
+
+.works-grid {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.work-item,.grid-sizer {
+  width: 25%;
+}
+
+.work-item.wide,.work-item.wide-tall {
+  width: 50%;
+}
+
+/* ------------------------------------------------------------------
+item
+------------------------------------------------------------------- */
+
+.work-item a {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+  overflow: hidden;
+}
+
+.work-item a:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+
+.work-item img {
+  height: 100%;
+  width: 100%;
+}
+
+.work-caption {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  padding: 20px;
+  z-index: 3;
+  text-align: center;
+  -webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  -o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+}
+
+.work-title {
+  font-size: 14px;
+  color: #fff;
+  margin: 6px 0 6px;
+}
+
+/* White hover */
+
+.works-hover-w .work-title {
+  color: #111;
+}
+
+/* ------------------------------------------------------------------
+Works item hover
+------------------------------------------------------------------- */
+
+.work-item:hover a:after {
+  background: rgba(34, 34, 34, 0.75);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.works-hover-w .work-item:hover a:after {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.work-item:hover .work-caption {
+  opacity: 1;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* ------------------------------------------------------------------
+Portfolio Single
+------------------------------------------------------------------- */
+
+.image-caption {
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.image-caption .caption-text {
+  position: absolute;
+  display: table;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  padding: 20px;
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------------------
+Preloader
+------------------------------------------------------------------- */
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-image: url('./index.svg');
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: top right;
+  background-size: 3%;
+}
