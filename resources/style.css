@@ -744,12 +744,6 @@ Responsive Media Querries
 
 }
 
-@media only screen and (max-width: 960px) {
-	.overlay-menu.active {
-		position: absolute;
-	}
-}
-
 @media (max-width: 767px) {
 	.textspacing {
 		margin-right: -.6em;
