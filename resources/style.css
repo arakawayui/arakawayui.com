@@ -547,7 +547,6 @@ Preloader
 ------------------------------------------------------------------- */
 
 .preloader {
-
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -559,25 +558,6 @@ Preloader
 	background-color: #fff;  
 	background-position: top right;
 	background-size: 3%;
-}
-
-.loader {
-	background: #ddd;
-	position: absolute;
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	left: 50%;
-	top: 50%;
-	margin: -20px 0 0 -20px;
-	text-indent: -9999em;
-	-webkit-border-radius: 100%;
-	-moz-border-radius: 100%;
-	border-radius: 100%;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation: ball-scale 1s 0s ease-in-out infinite;
-	animation: ball-scale 1s 0s ease-in-out infinite;
 }
 
 /* -------------------------------------------------------------------
@@ -627,7 +607,6 @@ Reset bootstrap navigation styles for small screens
 	margin-right: -15px;
 }
 
-
 .navbar-right + .extra-navbar {
 	margin: 0 15px;
 }
@@ -639,7 +618,6 @@ Reset bootstrap navigation styles for small screens
 .navbar-custom .navbar-nav > li > a {
 	padding-top: 15px;
 	padding-bottom: 15px;
-
 	padding-left: 25px;
 }
 
@@ -647,17 +625,13 @@ Reset bootstrap navigation styles for small screens
 Responsive Media Querries
 ------------------------------------------------------------------- */
 
-
 .navbar-transparent {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	background: rgba(255, 255, 255);
 }
 
-
-
 @media (min-width: 992px) {
-
 	.navbar-transparent {
 		padding-top: 5px;
 		padding-bottom: 5px;
@@ -665,7 +639,6 @@ Responsive Media Querries
 }
 
 @media (min-width: 1200px) {
-
 	.navbar-transparent {
 		padding-top: 10px;
 		padding-bottom: 10px;
@@ -674,14 +647,11 @@ Responsive Media Querries
 
 
 @media (min-width: 1310px) {
-
 	.navbar-transparent {
 		padding-top: 15px;
 		padding-bottom: 15px;
 	}
 }
-
-
 
 #copyrightcontainer{
 	position: absolute;
@@ -690,16 +660,10 @@ Responsive Media Querries
 	transform: translate(-50%, -50%);
 }
 
-
 @media (min-width: 768px) {
-
-
-
-
 	.module-front{
 		background-image: url("../1.jpg");
 	}
-
 
 	.extra-navbar2{
 		display: none;
@@ -739,18 +703,29 @@ Responsive Media Querries
 
 }
 
-.textspacing{margin-right: -1.2em;padding-left: 1.2em; }
-.textspacing2{margin-right: -.6em;padding-left: .6em; }
+.textspacing {
+	margin-right: -1.2em;
+	padding-left: 1.2em;
+}
 
-
+.textspacing2 {
+	margin-right: -.6em;
+	padding-left: .6em;
+}
 @media (max-width: 992px) {
 
 
 	/* front captions */
 
-	.textspacing{margin-right: -.9em;padding-left: .9em; }
-.textspacing2{margin-right: -.5em;padding-left: .5em; }
+	.textspacing {
+		margin-right: -.9em;
+		padding-left: .9em;
+	}
 
+	.textspacing2 {
+		margin-right: -.5em;
+		padding-left: .5em;
+	}
 
 	.mh-line-size-1 {
 		letter-spacing: 40px;
@@ -762,11 +737,6 @@ Responsive Media Querries
 		font-size: 20px;
 	}
 
-	.mh-line-size-3 {
-		letter-spacing: 20px;
-		font-size: 22px;
-	}
-
 	.mh-line-size-4 {
 		letter-spacing: 8px;
 		font-size: 16px;
@@ -775,50 +745,30 @@ Responsive Media Querries
 }
 
 @media only screen and (max-width: 960px) {
-
 	.overlay-menu.active {
-		position: absolute;
-	}
-	.aux-navigation-active .wrapper{
-		position: fixed;
-	}
-	.aux-navigation-active .side-navigation-wrapper,
-	.aux-navigation-active .overlay-menu {
 		position: absolute;
 	}
 }
 
 @media (max-width: 767px) {
+	.textspacing {
+		margin-right: -.6em;
+		padding-left: .6em;
+	}
 
-	/* front captions */
-
-	.textspacing{margin-right: -.6em;padding-left: .6em; }
-.textspacing2{margin-right: -.3em;padding-left: .3em; }
-
+	.textspacing2 {
+		margin-right: -.3em;
+		padding-left: .3em;
+	}
 
 	.mh-line-size-1 {
 		letter-spacing: 24px;
 		font-size: 26px;
 	}
 
-
-	.mh-line-size-3 {
-		letter-spacing: 14px;
-		font-size: 14px;
-	}
-
 	.mh-line-size-4 {
 		letter-spacing: 4px;
 		font-size: 14px;
-	}
-
-	.mh-line-size-5 {
-		letter-spacing: 2px;
-		font-size: 13px;
-	}
-
-	.mh-line-size-6 {
-		font-size: 13px;
 	}
 
 	/* Navbar */
@@ -846,16 +796,6 @@ Responsive Media Querries
 		padding-bottom: 0px;
 		height: 0px;
 	}
-	/* Portfolio filters */
-
-	.filters li {
-		display: block;
-		margin: 0 10px 10px;
-	}
-
-	.filters li:last-child {
-		margin: 0 10px 140px;
-	}
 
 	/* Portfolio grid */
 
@@ -875,9 +815,15 @@ Responsive Media Querries
 
 	/* front captions */
 
-	.textspacing{margin-right: -.3em;padding-left: .3em; }
-.textspacing2{margin-right: -.3em;padding-left: .3em; }
+	.textspacing {
+		margin-right: -.3em;
+		padding-left: .3em;
+	}
 
+	.textspacing2 {
+		margin-right: -.3em;
+		padding-left: .3em;
+	}
 
 	.mh-line-size-1 {
 		letter-spacing: 12px;
@@ -889,22 +835,8 @@ Responsive Media Querries
 		font-size: 14px;
 	}
 
-	.mh-line-size-3 {
-		letter-spacing: 4px;
-		font-size: 13px;
-	}
-
 	.mh-line-size-4 {
 		letter-spacing: 4px;
-		font-size: 12px;
-	}
-
-	.mh-line-size-5 {
-		letter-spacing: 2px;
-		font-size: 11px;
-	}
-
-	.mh-line-size-6 {
 		font-size: 12px;
 	}
 
@@ -1071,52 +1003,52 @@ Responsive Media Querries
 }
 
 .header{margin-right: -.6em;padding-left: .6em; 
-letter-spacing: 30px; font-family: 'Open Sans Condensed', sans-serif;}
+	letter-spacing: 30px; font-family: 'Open Sans Condensed', sans-serif;}
 
 
-.header2{margin-right: -.3em;padding-left: .3em; 
-letter-spacing: 15px; font-family: 'Open Sans Condensed', sans-serif;}
+	.header2{margin-right: -.3em;padding-left: .3em; 
+		letter-spacing: 15px; font-family: 'Open Sans Condensed', sans-serif;}
 
 
-.eye img {
-	opacity: 0.7;
-		-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-	-moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-	-o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-	transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
-}
-.eye:hover img, .eye:focus img {
-	opacity: 1;
-}
+		.eye img {
+			opacity: 0.7;
+			-webkit-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+			-moz-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+			-o-transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+			transition: all 0.3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+		}
+		.eye:hover img, .eye:focus img {
+			opacity: 1;
+		}
 
 
-.flickity-viewport {
-  transition: height 0.2s;
-}
+		.flickity-viewport {
+			transition: height 0.2s;
+		}
 
-.flickity-button {
-	top: 140px !important;
-}
+		.flickity-button {
+			top: 140px !important;
+		}
 
-.flickity-prev-next-button.previous {
-    left: -40px !important;
-}
+		.flickity-prev-next-button.previous {
+			left: -40px !important;
+		}
 
-.flickity-prev-next-button.next {
-    right: -45px !important;
-}
+		.flickity-prev-next-button.next {
+			right: -45px !important;
+		}
 
-.flickity-page-dots {
-	top: 260px;;
-}
+		.flickity-page-dots {
+			top: 260px;;
+		}
 
 /* 
 Fixes the Firefox anomaly while images are loading
 */
 @-moz-document url-prefix() {
-    img:-moz-loading {
-        visibility: hidden;
-    }
+	img:-moz-loading {
+		visibility: hidden;
+	}
 }
 
 .m-b-0{margin-bottom:0 !important}
