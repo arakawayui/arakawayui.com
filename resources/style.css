@@ -215,6 +215,21 @@ Navigation
 /* Overlay menu */
 
 .overlay-menu {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  visibility: hidden;
+  z-index: 9999;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  -ms-transition: all 0.4s ease-in-out 0s;
+  -o-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+/*.overlay-menu {
 	position: fixed;
 	background: rgba(0, 0, 0, 0.9);
 	display: table;
@@ -225,7 +240,7 @@ Navigation
 	z-index: 9999;
 	opacity: 0;
 }
-
+*/
 .overlay-menu.active {
 	visibility: visible;
 	opacity: 1;
@@ -258,9 +273,19 @@ Navigation
 	text-align: center;
 }
 
-.overlay-menu-nav {
+/*.overlay-menu-nav {
 	max-width: 300px;
 	margin: 0 auto 60px;
+}*/
+
+.overlay-menu-nav {
+  position: absolute;
+top: 50%;
+text-align: center;
+margin-top: -5em;
+left: 50%;
+margin-left: -4.3em;
+  max-width: 300px;
 }
 
 .overlay-navigation-footer {

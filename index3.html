@@ -1145,8 +1145,7 @@ margin-top: 50px !important; width:100%;"><span class="textspacing2 fade2" style
 
 			<script src="./resources/jquery-2.2.4.min.js"></script>
 			<script src="./resources/bootstrap.min.js"></script>
-						<script src="./resources/easing.parallax.min.js"></script>
-
+			<script src="./resources/easing.parallax.min.js"></script>
 			<script src="./resources/isotope.pkgd.min.js"></script>
 			<script src="./resources/packery-mode.pkgd.min.js"></script>
 			<script src="./resources/jquery.magnific-popup.min.js"></script>
@@ -1154,10 +1153,28 @@ margin-top: 50px !important; width:100%;"><span class="textspacing2 fade2" style
 			<script src="./resources/flickity-fade.js"></script>
 			<script src="./resources/hash.js"></script>
 			<script src="./resources/lazyload.min.js"></script>
-						<script src="./resources/custom.js"></script>
+			<script src="./resources/custom.js"></script>
 
 
 			<script>
+								(function() {
+				var lastScroll = 0;
+$(window).scroll(function()
+{
+     var nowScroll = $(this).scrollTop();
+     if(nowScroll > lastScroll && nowScroll > 300)
+     {
+          $('.navbar').fadeOut(600);
+     }
+     else
+     {
+          $('.navbar').fadeIn(300);
+     }
+     lastScroll = nowScroll;
+});
+
+			})();
+
 				(function() {
 				function logElementEvent(eventName, element) {
 					console.log(
